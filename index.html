@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soniashnyk — Handcrafted Ukrainian Chocolate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=switzer@400,500,600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3212;
+            --accent-light: #e7bd29;
+            --accent: #e17861;
+            --text-light: #fefcf6;
+            --text-dark: #000000;
+            --bg: #ffffff;
+            --border: #eaeaea;
+        }
+
+        body {
+            font-family: 'Switzer', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        .serif {
+            font-family: 'Boska', serif;
+        }
+
+        .h1 {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .h2 {
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .h3 {
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 1.1;
+        }
+
+        .body-large {
+            font-size: 33px;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .btn-text {
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .bg-primary {
+            background-color: var(--primary);
+        }
+
+        .text-primary {
+            color: var(--primary);
+        }
+
+        .border-primary {
+            border-color: var(--primary);
+        }
+
+        .bg-accent {
+            background-color: var(--accent);
+        }
+
+        .bg-accent-light {
+            background-color: var(--accent-light);
+        }
+
+        .text-accent {
+            color: var(--accent);
+        }
+
+        .transition-smooth {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hero-mask {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="min-h-screen flex flex-col">
+        <header
+            class="sticky top-0 z-50 bg-white border-b border-gray-100 px-6 lg:px-12 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <nav class="hidden lg:flex items-center gap-8 btn-text"><a href="#" id="nav-shop"
+                        class="hover:text-primary transition-colors">Shop</a> <a href="#" id="nav-story"
+                        class="hover:text-primary transition-colors">Our Story</a></nav>
+            </div><a href="/" id="nav-home-logo" class="absolute left-1/2 -translate-x-1/2"><img
+                    src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/brand-assets/eatyourflowers.com/logo-1773075224999.svg"
+                    alt="Soniashnyk Logo" class="h-12"></a>
+            <div class="flex items-center gap-6">
+                <nav class="hidden lg:flex items-center gap-8 btn-text"><a href="#" id="nav-process"
+                        class="hover:text-primary transition-colors">Process</a> <a href="#" id="nav-contact"
+                        class="hover:text-primary transition-colors">Contact</a></nav>
+                <div class="flex items-center gap-4"><button id="btn-search"
+                        class="p-2 hover:bg-gray-50 rounded-full"><iconify-icon icon="lucide:search"
+                            class="text-xl"></iconify-icon></button><button id="btn-cart"
+                        class="p-2 hover:bg-gray-50 rounded-full relative"><iconify-icon icon="lucide:shopping-bag"
+                            class="text-xl"></iconify-icon><span
+                            class="absolute top-0 right-0 w-2 h-2 bg-accent rounded-full"></span></button></div>
+            </div>
+        </header>
+        <main>
+            <section class="relative h-[90vh] flex items-center overflow-hidden">
+                <div class="absolute inset-0 z-0"><img
+                        src="https://pquxfbbxflqvtidtlrhl.supabase.co/storage/v1/object/public/hmac-uploads/brand/dcc96508-1ad6-43d8-8207-2199641903e4/assets/da69c26e-130b-453f-bf8b-3c777a7e472e.webp"
+                        alt="Artisanal Chocolate" class="w-full h-full object-cover brightness-[0.85]"></div>
+                <div
+                    class="container mx-auto px-6 lg:px-12 relative z-10 text-white max-w-4xl text-center md:text-left">
+                    <span class="h2 mb-4 block animate-fade-in">Handcrafted in New Jersey</span>
+                    <h1 class="h3 md:text-6xl lg:text-8xl mb-6 leading-none italic">The Taste of a Spontaneous Smile
+                    </h1>
+                    <p class="text-lg md:text-xl max-w-xl opacity-90 mb-8 font-light">Artisanal chocolate rooted in
+                        Ukrainian heritage, drawn from the simplicity of natural ingredients and the warmth of honest
+                        work.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"><a href="#"
+                            id="cta-hero-shop"
+                            class="bg-accent hover:bg-white hover:text-primary px-8 py-4 btn-text transition-smooth text-white inline-block">Shop
+                            the Collection</a> <a href="#" id="cta-hero-story"
+                            class="border border-white/40 backdrop-blur-md hover:bg-white hover:text-primary px-8 py-4 btn-text transition-smooth text-white inline-block">Our
+                            Ukrainian Heritage</a></div>
+                </div>
+            </section>
+            <section class="py-24 bg-[#fefcf6]">
+                <div class="container mx-auto px-6 lg:px-12">
+                    <div class="grid lg:grid-cols-2 gap-16 items-center">
+                        <div class="order-2 lg:order-1"><span class="h2 text-primary/60 mb-4 block">Meet Svitlana</span>
+                            <h2 class="h3 mb-8">"I have always been inspired by moments of genuine, human emotion."</h2>
+                            <div class="space-y-6 text-xl text-gray-700 leading-relaxed font-light">
+                                <p>For many years, Svitlana carried one idea — to create a place where real emotions
+                                    could live and be shared. Soniashnyk is that place.</p>
+                                <p>Meaning <span class="text-primary font-medium italic">sunflower</span> in Ukrainian,
+                                    the name reflects a journey from finance and sociology to the delicate art of
+                                    confectionery — always observing, learning, and collecting emotions along the way.
+                                </p>
+                            </div>
+                            <div class="mt-10 p-8 border-l-4 border-accent bg-white shadow-sm">
+                                <p class="italic text-2xl serif text-primary mb-4">"Every sweet is a small moment of
+                                    warmth that people can pass on to one another."</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="h-px w-8 bg-accent"></div><span class="h2 text-xs">Svitlana,
+                                        Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2 relative">
+                            <div class="aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl"><img
+                                    src="https://pquxfbbxflqvtidtlrhl.supabase.co/storage/v1/object/public/hmac-uploads/brand/dcc96508-1ad6-43d8-8207-2199641903e4/assets/f821a929-7175-487b-9127-a4f9a70b0f38.webp"
+                                    alt="Svitlana holding flowers" class="w-full h-full object-cover"></div>
+                            <div
+                                class="absolute -bottom-8 -left-8 bg-primary p-8 rounded-xl hidden md:block max-w-xs text-white">
+                                <iconify-icon icon="lucide:flower-2"
+                                    class="text-4xl text-accent-light mb-4"></iconify-icon>
+                                <p class="text-sm opacity-80 leading-relaxed uppercase tracking-widest">Rooted in
+                                    tradition. Crafted for connection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-white">
+                <div class="container mx-auto px-6 lg:px-12">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                        <div class="max-w-2xl"><span class="h2 text-accent mb-2 block">The Collection</span>
+                            <h3 class="h3">Artistry in every bite.</h3>
+                        </div><a href="#" id="view-all-link"
+                            class="btn-text text-primary border-b border-primary pb-1 hover:text-accent hover:border-accent transition-smooth">View
+                            All Collections</a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8"><a href="#" id="prod-1" class="group block">
+                            <div class="relative aspect-square overflow-hidden bg-gray-50 mb-6 rounded-lg"><img
+                                    src="https://pquxfbbxflqvtidtlrhl.supabase.co/storage/v1/object/public/hmac-uploads/brand/dcc96508-1ad6-43d8-8207-2199641903e4/assets/9f541cf6-9cc8-4e31-9334-ac4a921cdeb0.webp"
+                                    alt="Flower Cookies"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-700">
+                                <span
+                                    class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 btn-text text-[10px]">Best
+                                    Seller</span></div>
+                            <div class="flex justify-between items-start">
+                                <h4 class="serif text-2xl">Petal Shortbreads</h4><span class="text-lg">$32</span>
+                            </div>
+                            <p class="text-gray-500 mt-2 font-light">Pressed seasonal blooms on buttery shortbread.</p>
+                        </a> <a href="#" id="prod-2" class="group block">
+                            <div class="relative aspect-square overflow-hidden bg-gray-50 mb-6 rounded-lg"><img
+                                    src="https://pquxfbbxflqvtidtlrhl.supabase.co/storage/v1/object/public/hmac-uploads/brand/dcc96508-1ad6-43d8-8207-2199641903e4/assets/b65c64a6-3943-4509-8f0e-7a85f82b36a9.webp"
+                                    alt="Rose Chocolate"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-700">
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <h4 class="serif text-2xl">Deep Rose Dark Cacao</h4><span class="text-lg">$18</span>
+                            </div>
+                            <p class="text-gray-500 mt-2 font-light">72% dark chocolate with vibrant rose infusions.</p>
+                        </a> <a href="#" id="prod-3" class="group block">
+                            <div class="relative aspect-square overflow-hidden bg-gray-50 mb-6 rounded-lg"><img
+                                    src="https://pquxfbbxflqvtidtlrhl.supabase.co/storage/v1/object/public/hmac-uploads/brand/dcc96508-1ad6-43d8-8207-2199641903e4/assets/7d14e58c-0fd9-494a-9304-a7992f9d1b78.webp"
+                                    alt="Floral Lollipops"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-700">
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <h4 class="serif text-2xl">Botanical Sips</h4><span class="text-lg">$24</span>
+                            </div>
+                            <p class="text-gray-500 mt-2 font-light">Hand-poured lollipops with organic pressed flowers.
+                            </p>
+                        </a></div>
+                </div>
+            </section>
+            <section class="py-32 bg-primary text-white overflow-hidden relative">
+                <div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none"><iconify-icon
+                        icon="lucide:sunflower" class="text-[600px] text-accent-light"></iconify-icon></div>
+                <div class="container mx-auto px-6 lg:px-12 relative z-10">
+                    <div class="max-w-4xl"><span class="h2 text-accent-light mb-6 block">Our Philosophy</span>
+                        <h2 class="body-large italic mb-12 lg:pr-24">"Soniashnyk means sunflower in Ukrainian. It
+                            reflects who I am: rooted in heritage, drawn to natural beauty, devoted to sincerity,
+                            warmth, and honest work."</h2>
+                        <div class="grid md:grid-cols-3 gap-12">
+                            <div class="space-y-4">
+                                <div
+                                    class="h-12 w-12 rounded-full border border-white/20 flex items-center justify-center">
+                                    <iconify-icon icon="lucide:leaf" class="text-accent-light text-xl"></iconify-icon>
+                                </div>
+                                <h4 class="serif text-xl">Pure Authenticity</h4>
+                                <p class="text-sm opacity-70 leading-relaxed">No artificial colors or flavors. Only the
+                                    simple beauty of nature, exactly as it was intended.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <div
+                                    class="h-12 w-12 rounded-full border border-white/20 flex items-center justify-center">
+                                    <iconify-icon icon="lucide:heart" class="text-accent-light text-xl"></iconify-icon>
+                                </div>
+                                <h4 class="serif text-xl">Human Emotion</h4>
+                                <p class="text-sm opacity-70 leading-relaxed">We craft sweets that trigger spontaneous
+                                    smiles and create lasting memories between people.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <div
+                                    class="h-12 w-12 rounded-full border border-white/20 flex items-center justify-center">
+                                    <iconify-icon icon="lucide:palette"
+                                        class="text-accent-light text-xl"></iconify-icon></div>
+                                <h4 class="serif text-xl">Heritage Art</h4>
+                                <p class="text-sm opacity-70 leading-relaxed">Bringing the artisanal traditions of
+                                    Ukraine to the heart of New Jersey with every piece.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24">
+                <div class="container mx-auto px-6 lg:px-12 text-center mb-16"><span
+                        class="h2 text-primary mb-4 block">Journal</span>
+                    <h3 class="h3">Stories from the Garden</h3>
+                </div>
+                <div class="container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="relative group overflow-hidden rounded-2xl aspect-[16/9]"><img
+                            src="https://pquxfbbxflqvtidtlrhl.supabase.co/storage/v1/object/public/hmac-uploads/brand/dcc96508-1ad6-43d8-8207-2199641903e4/assets/99aa19a2-5305-4270-ae98-de1ac950c8c6.webp"
+                            alt="Artisanal Process"
+                            class="w-full h-full object-cover transition-smooth group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-8 text-white"><span
+                                class="btn-text text-xs mb-2">Craftsmanship</span>
+                            <h4 class="serif text-3xl mb-4">The Art of Pressing Flowers for Confectionery</h4><a
+                                href="#" id="read-more-1" class="flex items-center gap-2 group/btn"><span
+                                    class="btn-text text-xs">Read Story</span> <iconify-icon icon="lucide:arrow-right"
+                                    class="transition-smooth group-hover/btn:translate-x-2"></iconify-icon></a>
+                        </div>
+                    </div>
+                    <div class="relative group overflow-hidden rounded-2xl aspect-[16/9]"><img
+                            src="https://pquxfbbxflqvtidtlrhl.supabase.co/storage/v1/object/public/hmac-uploads/brand/dcc96508-1ad6-43d8-8207-2199641903e4/assets/e5a25881-d5c4-4e1f-88c6-392970882fdc.webp"
+                            alt="Seasonal Table"
+                            class="w-full h-full object-cover transition-smooth group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-8 text-white"><span
+                                class="btn-text text-xs mb-2">Lifestyle</span>
+                            <h4 class="serif text-3xl mb-4">Hosting with Sincerity: A Table of Sweets</h4><a href="#"
+                                id="read-more-2" class="flex items-center gap-2 group/btn"><span
+                                    class="btn-text text-xs">Read Story</span> <iconify-icon icon="lucide:arrow-right"
+                                    class="transition-smooth group-hover/btn:translate-x-2"></iconify-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-white border-t border-gray-100 py-16">
+            <div class="container mx-auto px-6 lg:px-12">
+                <div class="grid lg:grid-cols-4 gap-12 mb-16">
+                    <div class="lg:col-span-1"><img
+                            src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/brand-assets/eatyourflowers.com/logo-1773075224999.svg"
+                            alt="Soniashnyk Logo" class="h-12 mb-6">
+                        <p class="text-sm text-gray-500 max-w-xs">Soniashnyk is a celebration of Ukrainian heritage and
+                            the simple beauty of nature, handcrafted in New Jersey.</p>
+                    </div>
+                    <div>
+                        <h5 class="btn-text text-xs font-semibold mb-6">Navigation</h5>
+                        <ul class="space-y-4 text-sm text-gray-600 font-light">
+                            <li><a href="#" id="foot-shop" class="hover:text-primary">Shop All</a></li>
+                            <li><a href="#" id="foot-story" class="hover:text-primary">Our Story</a></li>
+                            <li><a href="#" id="foot-shipping" class="hover:text-primary">Shipping & Returns</a></li>
+                            <li><a href="#" id="foot-faq" class="hover:text-primary">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="btn-text text-xs font-semibold mb-6">Connect</h5>
+                        <ul class="space-y-4 text-sm text-gray-600 font-light">
+                            <li><a href="#" id="social-ig" class="hover:text-primary">Instagram</a></li>
+                            <li><a href="#" id="social-fb" class="hover:text-primary">Facebook</a></li>
+                            <li><a href="#" id="social-pt" class="hover:text-primary">Pinterest</a></li>
+                            <li><a href="#" id="social-mail" class="hover:text-primary">svitlana@soniashnyk.com</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="btn-text text-xs font-semibold mb-6">Newsletter</h5>
+                        <p class="text-sm text-gray-500 mb-4">Join our community for seasonal surprises and heartfelt
+                            stories.</p>
+                        <form class="flex gap-2"><input type="email" placeholder="Your email address"
+                                class="flex-1 border border-gray-200 px-4 py-3 rounded-none text-sm focus:outline-none focus:border-primary"><button
+                                type="submit" class="bg-primary text-white px-4 py-3 btn-text text-[10px]">Join</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-[10px] uppercase tracking-widest text-gray-400">&copy; 2024 Soniashnyk. Rooted in
+                        Ukraine. Made with Love.</p>
+                    <div class="flex gap-6"><iconify-icon icon="ri:instagram-line"
+                            class="text-xl text-gray-400 hover:text-primary cursor-pointer"></iconify-icon><iconify-icon
+                            icon="ri:facebook-box-line"
+                            class="text-xl text-gray-400 hover:text-primary cursor-pointer"></iconify-icon><iconify-icon
+                            icon="ri:pinterest-line"
+                            class="text-xl text-gray-400 hover:text-primary cursor-pointer"></iconify-icon></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
